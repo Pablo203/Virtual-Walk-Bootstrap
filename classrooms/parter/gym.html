@@ -58,7 +58,7 @@
 
     <div class="jumbotron">
         <div class="embed-responsive embed-responsive-21by9">
-            <iframe class="embed-responsive-item" frameborder="0" allowfullscreen="true" src="https://momento360.com/e/u/dfc2aaf663a74fb3be0511cc9b0e950a?utm_campaign=embed&utm_source=other&heading=-410&pitch=14.79&field-of-view=57.5&size=medium">
+            <iframe id="fun" class="embed-responsive-item" frameborder="0" allowfullscreen="true" src="">
             </iframe>
         </div>
     </div>
@@ -76,6 +76,20 @@
         </div>
     </div>
 
+    <script>
+        var number;
+        photo_change = () =>{
+        number = Math.floor(Math.random() * 10);
+        console.log(number);
+        if(number<=3){
+            document.getElementById("fun").src="https://momento360.com/e/u/aca360c7f8c94686861dc701eee3c0c5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium";
+        }
+        else {
+            document.getElementById("fun").src = "https://momento360.com/e/u/dfc2aaf663a74fb3be0511cc9b0e950a?utm_campaign=embed&utm_source=other&heading=-410&pitch=14.79&field-of-view=57.5&size=medium";
+        }
+        }
+        onload = photo_change;
+    </script>
     <!-- Footer Area End -->
 
 </body>
